@@ -105,6 +105,7 @@ end
 def play(board)
   until over?(board) do
     turn(board)
+    draw(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
